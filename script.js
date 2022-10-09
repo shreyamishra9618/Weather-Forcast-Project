@@ -19,8 +19,6 @@ fetch('http://api.openweathermap.org/geo/1.0/direct?q='+newName.value+'&limit=1&
 
 
                 weatherAPIcall(latitude,longitude)
-
-    
     
 })
 }
