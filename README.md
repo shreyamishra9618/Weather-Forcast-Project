@@ -4,7 +4,7 @@ Use the [5 Day Weather Forecast](https://openweathermap.org/forecast5) to retrie
 
 Fetching the latitudes and longitudes from geocoding API and then passing them as parameters for openweather API call.
 
-It is in development phase, required to put dynamiclly updated HTML and CSS features
+It is in development phase, required to put dynamiclly updated HTML and CSS features.
 Currently this is the basic version
 
 URL to website:https://shreyamishra9618.github.io/Weather-Forcast-Project/
