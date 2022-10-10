@@ -2,7 +2,7 @@ function GetInfo() {
 
     var newName = document.getElementById("cityInput");
     var cityName = document.getElementById("cityName");
-    cityName.innerHTML = "--" + newName.value + "--";
+    cityName.innerHTML = "  " + newName.value + "  ";
     var latitude;
     var longitude;
     // Modification by Shreya M on Oct 9 2022 for adding latitude and longitude api ///
@@ -30,13 +30,13 @@ function weatherAPIcall(latitude, longitude) {
             //Getting the min and max values for each day
             for (i = 0; i < 5; i++) {
                 document.getElementById("day" + (i + 1) + "Min").innerHTML = "Min: " + Number(data.list[i].main.temp_min - 273.15).toFixed(1) + "°";
-                //Number(1.3450001).toFixed(2); // 1.35
+               
             }
 
             for (i = 0; i < 5; i++) {
                 document.getElementById("day" + (i + 1) + "Max").innerHTML = "Max: " + Number(data.list[i].main.temp_max - 273.15).toFixed(2) + "°";
             }
-            //------------------------------------------------------------
+           
 
             //Getting Weather Icons
             for (i = 0; i < 5; i++) {
@@ -44,7 +44,11 @@ function weatherAPIcall(latitude, longitude) {
                     data.list[i].weather[0].icon
                     + ".png";
             }
-            //------------------------------------------------------------
+           
+            // Getting Humidity Info
+            for (i = 0; i < 5; i++) {
+                document.getElementById("day" + (i + 1) + "Humidity").innerHTML = "Humidity: " + data.list[i].main.humidity
+            }
             console.log(data)
 
 
@@ -59,11 +63,10 @@ function DefaultScreen() {
 }
 
 
-//Getting and displaying the text for the upcoming five days of the week
 var d = new Date();
 var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",];
 
-//Function to get the correct integer for the index of the days array
+//Function to get the correct day
 function CheckDay(day) {
     if (day + d.getDay() > 6) {
         return day + d.getDay() - 7;
@@ -76,6 +79,6 @@ function CheckDay(day) {
 for (i = 0; i < 5; i++) {
     document.getElementById("day" + (i + 1)).innerHTML = weekday[CheckDay(i)];
 }
-    //------------------------------------------------------------
+   
 
 

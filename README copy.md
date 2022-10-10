@@ -103,19 +103,3 @@ You are required to submit BOTH of the following for review:
 
 
 ---------
-## notes
-
-api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
-
-https://api.openweathermap.org/data/2.5/forecast?lat=37.1289771&lon=84.0832646&appid=7fce6dca761e606465fe67951ea85095
-
-
-          Geocoding API  
-
-http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid={API key}
-
-http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=7fce6dca761e606465fe67951ea85095
-
-
-
-
