@@ -97,7 +97,7 @@ function weatherAPIcall(latitude, longitude) {
                 createCard.className = 'product-card';
                 getPrincipalContainer.append(createCard)
 
-                /*Implementing Names of the park */
+                /*Implementing Names of the days */
                 let createName3 = document.createElement("h4")
                 createName3.className = "card-title"
                 createName3.innerHTML = weekday[CheckDay(i)]
@@ -112,13 +112,13 @@ function weatherAPIcall(latitude, longitude) {
                 createCard.appendChild(createImg)
 
 
-                /*Implementing Names of the park */
+                /*Implementing Min temp */
                 let createName = document.createElement("h4")
                 createName.className = "card-title"
                 createName.innerHTML = "Min: " + Number(data.list[i].main.temp_min - 273.15).toFixed(1) + "°";
                 createCard.appendChild(createName)
 
-                /*Implementing Names of the park */
+                /*Implementing Max temp */
                 let createName1 = document.createElement("h4")
                 createName1.className = "card-title"
                 createName1.innerHTML = "Max: " + Number(data.list[i].main.temp_max - 273.15).toFixed(1) + "°";
@@ -126,13 +126,13 @@ function weatherAPIcall(latitude, longitude) {
 
 
 
-                /*Implementing Names of the park */
+                /*Implementing Humidity */
                 let createName2 = document.createElement("h4")
                 createName2.className = "card-title"
                 createName2.innerHTML = "Humidity: " + data.list[i].main.humidity
                 createCard.appendChild(createName2)
 
-                 /*Implementing Names of the park */
+                 /*Implementing Wind Speed */
                  let createName4 = document.createElement("h4")
                  createName4.className = "card-title"
                  createName4.innerHTML = "Wind Speed: " + data.list[i].wind.speed

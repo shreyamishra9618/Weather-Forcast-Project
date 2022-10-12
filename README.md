@@ -4,11 +4,19 @@ Use the [5 Day Weather Forecast](https://openweathermap.org/forecast5) to retrie
 
 Fetching the latitudes and longitudes from geocoding API and then passing them as parameters for openweather API call.
 
-It is in development phase, required to put dynamiclly updated HTML and CSS features.
-Currently this is the basic version
 
 URL to website:https://shreyamishra9618.github.io/Weather-Forcast-Project/
 
 The following image shows the web application's appearance and functionality:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Seattle.](./Screen%20Shot%202022-10-10%20at%204.07.37%20PM.png)
+![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Seattle.](./DynamicPage.png)
+
+
+## Summary
+* HTML and CSS and Javascript documents create a weather application
+* This project emphasizes the use of using an API call and JQuery to make dynamic changes to an HMTL document
+* This project utilizes the use of appending HTML pages
+## This project has the following features:
+* A Search bar for the city location
+* A card that provides the current weather  Location, Temp, Humidity, Wind Speed
+* Card that provides a five day forecast
