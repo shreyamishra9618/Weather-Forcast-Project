@@ -1,12 +1,12 @@
 *{
     color: rgb(1, 18, 24);
-     background: rgb(92, 92, 94); 
+     background: rgb(2, 149, 147); 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 :root{
     --primary:rgb(94, 205, 242);
-    --secondar: rgb(222, 239, 245);
-    --tertiary:rgb(41, 41, 42);
+    --secondar: rgb(80, 187, 132);
+    /* --tertiary:rgb(41, 41, 42); */
     
 }
 
@@ -18,108 +18,62 @@ h1 {
     background-color: var(--secondar);
     text-align: center;
     margin: auto;
-    color: rgb(19, 6, 83);
-    border: 5px solid rgb(31, 82, 60);   
+    color: rgb(17, 2, 61);
+    border: 5px solid rgb(4, 245, 140);   
   
 }
 
 
-#cityInput, #cityName, #inputContainer{
+#cityInput, #cityName, #inputContainer,button{
 margin: 3px;
 padding:5px;
-text-align:center;
+text-align:left;
 font-size:20px;
 font-weight:bold;
 }
-button{
-    display: block;
-    margin: auto;
-    padding:5px;
-    background-color:var(--secondar);
-}
 
-#iconsContainer{
+
+#weatherContainer{
     display: flex;
     position: absolute;
     top: 60%;
-    left: 50%;
+    left: 60%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    height: 50%;
-    width: 90%;    
-    border: 5px solid rgb(31, 82, 60);    
+    height: 60%;
+    width: 60%;    
+    border: 5px solid rgb(6, 232, 134);    
     border-radius: 10px;
-    background-color: black;
+    background-color: rgb(1, 44, 53);
     padding: 30px;
 }
 
-.icons{
+.product-card{
     /* display:flex; */
     /* display:flexbox; */
-    display: inline-flexbox;
+   
+    display:inline-block ;
     align-content: center;
-    float: left;
     height: 90%;
     width: 30%;
-    margin: 10px;
-    border: 5px solid rgb(249, 249, 5);
+    margin: 8px;
+    border: 5px solid rgb(42, 2, 72);
     border-radius: 10px;
     background-color: var(--primary);
 }
 
-.image{
-    height: 60%;
-    width: 50%;
+img{
+    height: 30%;
+    width: 40%;
     background-color: var(--primary);
   
 }
 
-.imgClass{
-    height: 90%;
-    width: 100%;
+.card-title{
+    margin: 7px;
     background-color: var(--primary);
-}
-
-.weather{
-    margin: 5px;
-    background-color: var(--secondar);
     border-radius: 8px;
     text-align: center;
     font-weight: bold;
 }
 
-.minValues{
-    text-align: center;
-    display: inline-block;
-    border-radius: 5px;
-    height: 25px;
-    width: 80%;
-    margin: 0;
-    margin-bottom: 5px;
-    margin-left: 0px;
-    background-color: var(--primary);
-}
-
-
-.maxValues{
-    text-align: center;
-    display: inline-block;
-    border-radius: 5px;
-    height: 25px;
-    width: 80%;
-    margin: 0;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    background-color:var(--primary);
-}
-.humidity{
-    text-align: center;
-    display: inline-block;
-    border-radius: 5px;
-    height: 25px;
-    width: 80%;
-    margin: 0;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    background-color:var(--primary);
-}
